@@ -3,8 +3,6 @@ from app.booking import contracts
 from app.booking.hotels_text_database import bookings as bookings_db
 from app import common
 
-from datetime import date
-
 
 def add_booking(
     booking: contracts.Booking
