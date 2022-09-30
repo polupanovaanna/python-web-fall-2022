@@ -1,4 +1,10 @@
 Pipfile
-.vscode/
 Pipfile.lock
 .DS_Store
+app/__pycache__/
+app/tests/__pycache__/
+app/booking/__pycache__/
+app/booking/tests/__pycache__/
+python-virtual-environments/
+app/booking/__init__.pyc
+app/booking/tests/__init__.pyc
