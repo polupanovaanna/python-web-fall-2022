@@ -1,5 +1,4 @@
 from fastapi import APIRouter
-from datetime import date
 from app.booking import contracts
 from app.booking import process_booking
 

@@ -1,7 +1,6 @@
 import unittest
 import unittest.mock
 
-from app.booking import contracts
 from datetime import datetime
 from app.booking import process_booking
 from app.booking.hotels_text_database import bookings as bookings_db
