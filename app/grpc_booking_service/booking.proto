@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+message Null {}
+
+message Id {
+    uint32 value = 1;
+}
+
+message Booking {
+  optional Id id = 1;
+  string hotels_name = 2;
+  string start_date = 3;
+  string end_date = 4;
+  uint32 price = 5;
+  optional string comments = 6; 
+}
+
+message BookingList {
+    repeated Booking items = 1;
+}
+
+service ProcessBookingRequestService {
+  rpc AddBooking(Booking) returns (Booking) {}
+  rpc GetBooking(Id) returns (Booking) {}
+  rpc GetAllBookings(Null) returns (BookingList) {}
+}
